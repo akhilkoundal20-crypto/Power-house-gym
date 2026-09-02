@@ -6,6 +6,9 @@
   html {
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   body {
@@ -14,6 +17,22 @@
     background-color: #FAF7F2;
     background-image: radial-gradient(#E8DFD3 0.75px, transparent 0.75px);
     background-size: 20px 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  img, video, canvas {
+    max-width: 100%;
   }
 
   h1, h2, h3, h4, h5, h6 {

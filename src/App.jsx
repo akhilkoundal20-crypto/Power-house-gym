@@ -30,13 +30,13 @@ function App() {
     <CraftProvider>
       <BrowserRouter>
         <ScrollToTop />
-        <div className="min-h-screen flex flex-col bg-[#FAF7F2] text-[#23201D]">
+        <div className="min-h-screen w-full max-w-full overflow-x-clip flex flex-col bg-[#FAF7F2] text-[#23201D]">
           
           {/* Header */}
           <Navbar />
 
           {/* Main View Area */}
-          <main className="flex-1">
+          <main className="flex-1 w-full max-w-full overflow-x-clip">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/shop" element={<ShopPage />} />
