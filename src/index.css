@@ -9,47 +9,94 @@
   }
 
   body {
-    @apply bg-gymDark text-gray-200 antialiased overflow-x-hidden;
-    font-family: 'Outfit', sans-serif;
+    @apply bg-[#FAF7F2] text-[#23201D] antialiased overflow-x-hidden;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FAF7F2;
+    background-image: radial-gradient(#E8DFD3 0.75px, transparent 0.75px);
+    background-size: 20px 20px;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply tracking-wider uppercase font-semibold text-white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply text-charcoal tracking-tight font-medium;
   }
 
-  /* Custom selection styling */
   ::selection {
-    @apply bg-gymAccent text-white;
+    background-color: #D49B35;
+    color: #FAF7F2;
   }
 }
 
 @layer utilities {
-  /* Hide scrollbar for Chrome, Safari and Opera */
+  .font-display {
+    font-family: 'Cinzel', serif;
+  }
+  .font-hindi {
+    font-family: 'Rozha One', 'Yatra One', serif;
+  }
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-sans {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  /* Traditional craft paper texture */
+  .craft-paper {
+    background-color: #FAF7F2;
+    background-image: radial-gradient(rgba(212, 155, 53, 0.08) 1px, transparent 0);
+    background-size: 16px 16px;
+  }
+
+  .craft-card {
+    background-color: #FFFFFF;
+    border: 1px solid #ECE3D6;
+    box-shadow: 0 4px 14px -3px rgba(35, 32, 29, 0.06);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .craft-card:hover {
+    border-color: #D49B35;
+    box-shadow: 0 10px 24px -5px rgba(35, 32, 29, 0.10);
+    transform: translateY(-2px);
+  }
+
+  /* Traditional jharokha arch top curve */
+  .jharokha-top {
+    border-top-left-radius: 50% 25%;
+    border-top-right-radius: 50% 25%;
+  }
+
+  /* Indian motif subtle dashed border */
+  .craft-border-dashed {
+    border: 1px dashed #D5C8B5;
+  }
+
+  /* Hide scrollbar */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
-/* Custom Scrollbar for the page */
+/* Custom Artisan Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #050505;
+  background: #F4EFE7;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a2a2a;
+  background: #C7B8A3;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e11d48;
+  background: #D49B35;
 }
